@@ -125,3 +125,8 @@ nb-configuration.xml
 /phpunit*.xml
 /.phpunit.*.cache
 
+/assets/package.json
+/assets/package-lock.json
+/assets/gulpfile.js
+/assets/node_modules/
+

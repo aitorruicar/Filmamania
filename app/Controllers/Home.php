@@ -10,7 +10,7 @@ class Home extends BaseController
     public function index()
     {
         
-        echo loadViews('actors/add-actors');
+        echo loadViews();
     }
 
     protected function insertarUsuario()

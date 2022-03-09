@@ -2,7 +2,7 @@
 <header>
     <nav>
         <ul>
-            <li>Inicio</li>
+            <li><a href="<?php echo base_url().'/Actores/crear-actor'; ?>">Aqui</a></li>
         </ul>
     </nav>
 </header>
