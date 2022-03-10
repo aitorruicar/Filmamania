@@ -58,6 +58,8 @@ class Actors extends BaseController
             }
         }
 
-        echo loadViews('actors/add-actors', $data);
+        $data_header['title_page'] = "Añadir actor";
+
+        echo loadViews('actors/add-actors', $data_header, $data);
     }
 }

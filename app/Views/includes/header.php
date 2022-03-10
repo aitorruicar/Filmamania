@@ -8,4 +8,8 @@
     <link rel="stylesheet" href="<?php echo base_url() . '/assets/css/main.css'; ?>">
 </head>
 <body>
-    
+
+    <header>
+        <h1 class="main-title">Filmamanía</h1>
+        <h2 class="secondary-title"><?php echo (!empty($title_page)) ? $title_page : ""; ?></h2>
+    </header>

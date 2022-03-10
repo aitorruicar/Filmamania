@@ -1,0 +1,36 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    @include normal-font;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+
+    p
+    {
+        margin-bottom: 0.25rem;
+    }
+
+    a
+    {
+        text-decoration: none;
+    }
+}
+
+header
+{
+    margin-left: 10rem;
+    padding: 1.5rem 1.5rem;
+    border-bottom: 2px solid black;
+}
+main
+{
+    margin-left: 10rem;
+    padding: 1.5rem;
+}

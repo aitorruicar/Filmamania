@@ -1,4 +1,13 @@
-body
-{
-    background-color: rgb(187, 79, 79);
-}
+// 01_HELPERS
+
+@import '01_helpers/colors.scss';
+@import '01_helpers/fonts.scss';
+@import '01_helpers/headers.scss';
+
+// 02_LAYOUTS
+
+@import '02_layouts/global.scss'; 
+
+// 03_COMPONENTS
+
+@import '03_components/navbar.scss'

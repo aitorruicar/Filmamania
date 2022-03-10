@@ -1,0 +1,15 @@
+.main-title
+{
+    @include headers-font; 
+    font-size: 3.7rem;
+    font-weight: 600;
+    color: $colorComplementBold;
+}
+
+.secondary-title
+{
+    @include headers-font; 
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: $colorComplementLight;
+}
