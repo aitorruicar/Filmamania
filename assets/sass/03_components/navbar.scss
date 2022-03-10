@@ -21,7 +21,13 @@ nav
 
         li
         {
+            &:nth-child(1)
+            {
+                padding-bottom: 0;
+            }
+            
             margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
             
             #nav-icon
             {

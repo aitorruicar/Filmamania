@@ -24,12 +24,10 @@ boton_menu.addEventListener('click', () => {
         if (!active.includes('active')) 
         {
             list[i].style.setProperty("border-bottom", "2px solid #F5E6CB");
-            list[i].style.setProperty("padding-bottom", "0.75rem");
         }
         else
         { 
             list[i].style.setProperty("border-bottom", "none");
-            list[i].style.setProperty("padding-bottom", "0rem");
         }
     }
 })
