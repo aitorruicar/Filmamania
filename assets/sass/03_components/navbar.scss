@@ -5,13 +5,13 @@ nav
     top: 0;
     background-color: $colorFilmaniaBold;
     height: 100vh;
-    width: 10rem;
+    width: 2.5rem;
     
     ul
     {
-        background-color: aliceblue;
         display: flex;
-        flex-flow: column;
+        flex-flow: row wrap;
+        justify-content: center;
 
         li
         {
