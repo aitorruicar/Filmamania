@@ -19,7 +19,8 @@ class Actors extends BaseController
         //Actúa para añadir y para guardar esta función
         helper(['url', 'form']);
 
-        $M_countries = new M_countries; 
+        $M_countries = new M_countries;
+        $M_actors = new M_actors();  
         $validation = \Config\Services::validation();
 
         $data['paises'] = $M_countries->findAll();
@@ -27,8 +28,9 @@ class Actors extends BaseController
         $validation->setRules(
         [
             "name" => "required" , 
-            'description' => "required|min_length[50]", 
-            'country' => "required", 
+            'description' => "required|min_length[10]", 
+            'country' => "required",
+            'image' => 'is_image[image]' 
         ], 
         [
             "name" => 
@@ -44,6 +46,10 @@ class Actors extends BaseController
             [
                 'required' => 'Seleccione un país'
             ],
+            'image' =>
+            [
+                'is_image' => 'El archivo tiene que ser una imagen'
+            ]
         ]);
         
         if($_POST)
@@ -54,7 +60,16 @@ class Actors extends BaseController
                 print_r($errors);
             }else
             {
-                echo "Correcto!"; 
+                $file = $this->request->getFile('image');
+                if($file->isValid())
+                {
+                    $file->move(WRITEPATH.'uploads');
+                    
+                }
+                
+                $_POST['image'] = $file->getName();
+                $M_actors->insert($_POST); 
+                echo "CORRECTO";
             }
         }
 

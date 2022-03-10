@@ -8,6 +8,7 @@
         <textarea name="description" id="description" cols="30" rows="10"></textarea>
     </fieldset>
     <fieldset>
+        <label for="country">País de origen</label>
         <select name="country" id="countries">
             <?php
                 foreach($paises as $pais)
