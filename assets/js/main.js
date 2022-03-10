@@ -15,6 +15,21 @@ boton_menu.addEventListener('click', () => {
 
     for(var i = 0 ; i < text_nav.length; i++)
     {
-        (!active.includes('active')) ? text_nav[i].classList.remove('no-active') : text_nav[i].classList.add('no-active');
+        (!active.includes('active')) ? text_nav[i].style.setProperty("display", "inline-block") : text_nav[i].style.setProperty("display", "none");
+    }
+
+    var list = navegador.getElementsByTagName('li');
+    for(var i = 1 ; i < list.length; i++)
+    {
+        if (!active.includes('active')) 
+        {
+            list[i].style.setProperty("border-bottom", "2px solid #F5E6CB");
+            list[i].style.setProperty("padding-bottom", "0.75rem");
+        }
+        else
+        { 
+            list[i].style.setProperty("border-bottom", "none");
+            list[i].style.setProperty("padding-bottom", "0rem");
+        }
     }
 })

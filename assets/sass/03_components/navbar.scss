@@ -5,7 +5,7 @@ nav
     top: 0;
     height: 100vh;
     width: 2.5rem;
-    transition: .3s;
+    transition: .2s ease-in;
     background-color: $colorFilmaniaBold;
 
 
@@ -30,15 +30,17 @@ nav
 
             a
             {
-                span
-                {
-                    
+                display: flex;
+                align-items: center;
+                line-height: 0;
+                
+            }
 
-                    &.no-active
-                    {
-                        display: none;
-                    }
-                }
+            .text-nav
+            {
+                display: none;
+                color: $colorFilmaniaLight;
+                margin-left: 1.5rem;
             }
         }
     }
@@ -63,28 +65,10 @@ nav
             li
             {
                 width: 100%;
-                text-align: left;
-                padding-bottom: 0.75rem;
-                border-bottom: 2px solid $colorFilmaniaLight;
                 
                 #nav-icon
                 {
                     cursor: pointer;
-                }
-
-                a
-                {
-                    display: flex;
-                    flex-flow: row wrap;
-                    align-items: center;
-                    span
-                    {
-                        &.text-nav
-                        {
-                            margin-left: 1.5rem;
-                            color: $colorFilmaniaLight;
-                        }
-                    }
                 }
             }
         }

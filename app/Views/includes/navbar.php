@@ -17,7 +17,7 @@
                 <span class="icon-nav">
                     <img src="<?php echo base_url() . '/assets/img/icons/at-sign.svg'; ?>" alt="Actores">
                 </span>
-                <span class="text-nav no-active">
+                <span class="text-nav">
                     Actores
                 </span>
             </a>
@@ -27,7 +27,7 @@
                 <span class="icon-nav">
                     <img src="<?php echo base_url() . '/assets/img/icons/film.svg'; ?>" alt="Actores">
                 </span>
-                <span class="text-nav no-active">
+                <span class="text-nav">
                     Peliculas
                 </span>
             </a>
@@ -37,7 +37,7 @@
                 <span class="icon-nav">
                     <img src="<?php echo base_url() . '/assets/img/icons/users.svg'; ?>" alt="Actores">
                 </span>
-                <span class="text-nav no-active">
+                <span class="text-nav">
                     Usuarios
                 </span>
             </a>
