@@ -21,3 +21,15 @@
         font-size: 3.7rem;
     }
 }
+
+.normal-title
+{
+    @include headers-font; 
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $colorComplementBold;
+
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+    }
+}

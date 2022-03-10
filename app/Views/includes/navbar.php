@@ -13,7 +13,7 @@
             </span>
         </li>
         <li>
-            <a href="<?php echo base_url().'/actores/crear-actor'; ?>">
+            <a href="<?php echo base_url().'/actores'; ?>">
                 <span class="icon-nav">
                     <img src="<?php echo base_url() . '/assets/img/icons/at-sign.svg'; ?>" alt="Actores">
                 </span>

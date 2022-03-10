@@ -10,8 +10,12 @@ class Actors extends BaseController
 {
     public function index()
     {
-        
-        echo loadViews('actors/add-actors');
+        $db = \Config\Database::connect();
+        $builder = $db->table('actors'); 
+        $builder->select('*');
+        $data['actors'] = $builder->get()->getResultArray();
+        $data_header['title_page'] = "Actores";
+        echo loadViews('actors/index', $data_header, $data);
     }
 
     public function add_actors()
@@ -69,7 +73,8 @@ class Actors extends BaseController
                 
                 $_POST['image'] = $file->getName();
                 $M_actors->insert($_POST); 
-                echo "CORRECTO";
+                
+                return redirect()->to(base_url().'/actors');
             }
         }
 

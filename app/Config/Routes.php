@@ -32,6 +32,7 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/actores', 'Actors::index');
 $routes->get('/actores/crear-actor', 'Actors::add_actors');
 $routes->post('actores/guardar-actor', 'Actors::add_actors');
 
